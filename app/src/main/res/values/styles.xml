@@ -1,0 +1,69 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.Edit" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/input_login_hint</item>
+    </style>
+
+    <style name="AppTheme.Splashscreen" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/input_login_hint</item>
+        <item name="colorPrimaryDark">@color/input_login_hint</item>
+        <item name="colorAccent">@color/input_login_hint</item>
+    </style>
+
+    <style name="AppTheme.Login" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/customblueDark</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme_Dark_Dialog" parent="ThemeOverlay.AppCompat.Dialog" />
+
+    <style name="FullscreenTheme" parent="AppTheme">
+        <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+    </style>
+
+    <style name="FullscreenActionBarStyle" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+
+    <style name="AppTheme.Toolbar">
+        <item name="toolbarStyle">@style/Widget.Toolbar</item>
+        <item name="toolbarNavigationButtonStyle">@style/Widget.Toolbar.Button.Navigation</item>
+    </style>
+
+    <style name="Widget" parent="android:Widget" />
+
+    <style name="Widget.Toolbar" parent="Widget.AppCompat.Toolbar">
+        <item name="contentInsetStart">0dp</item>
+    </style>
+
+    <style name="Widget.Toolbar.Button.Navigation" parent="Widget.AppCompat.Toolbar.Button.Navigation">
+        <item name="android:minWidth">20dip</item>
+        <item name="android:minHeight">20dip</item>
+        <item name="android:maxHeight">20dip</item>
+        <item name="android:maxWidth">20dip</item>
+        <item name="android:padding">0dip</item>
+    </style>
+
+    <style name="AppTheme.TransNav" parent="AppTheme">
+        <item name="android:minWidth">20dip</item>
+        <item name="android:maxWidth">20dip</item>
+        <item name="android:padding">0dip</item>
+    </style>
+</resources>

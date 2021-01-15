@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.GeninSamba.gg.gdrivdriver.MapsActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/customAppBarLayout"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#78909C"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:theme="@style/AppTheme.Toolbar">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profileToolbar_user"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                app:civ_border_width="2sp"
+                app:civ_border_color="@color/colorWhite"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/ic_user_profil" />
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="En fonction"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="false"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="10sp"
+                android:id="@+id/workingSwitch"/>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+
+    <include
+        layout="@layout/content_nav" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp">
+
+        <android.support.v7.widget.AppCompatImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/setMyLocation"
+            app:srcCompat="@drawable/ic_my_location"
+            android:background="@drawable/circularbutton"
+            />
+
+        <android.support.v7.widget.AppCompatImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/setMyDestination"
+            app:srcCompat="@drawable/ic_subdirectory_arrow"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            android:background="@drawable/circularbutton"
+            />
+    </LinearLayout>
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonHome"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        app:menu_showShadow="true"
+        app:menu_fab_label=""
+        app:menu_colorNormal="@color/bg_login"
+        app:menu_openDirection="up"
+        app:menu_backgroundColor="@android:color/transparent">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_label="Paramètres"
+            app:fab_size="mini"
+            app:fab_colorNormal="@color/bg_login"
+            android:id="@+id/settings"
+            app:srcCompat="@drawable/ic_settings"
+            />
+        <com.github.clans.fab.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_label="Historique"
+            app:fab_size="mini"
+            app:fab_colorNormal="@color/bg_login"
+            android:id="@+id/history"
+            app:srcCompat="@drawable/ic_content_paste"
+            />
+        <com.github.clans.fab.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_label="Se déconnecter"
+            app:fab_colorNormal="@color/bg_login"
+            app:fab_size="mini"
+            android:id="@+id/logout"
+            app:srcCompat="@drawable/ic_phonelink_erase"
+            />
+    </com.github.clans.fab.FloatingActionMenu>
+
+    <!--<android.support.design.widget.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_gravity="bottom"
+        android:background="#B0BEC5"
+        app:itemIconTint="@drawable/nav_item_state_list"
+        app:itemTextColor="@drawable/nav_item_state_list"
+        app:menu="@menu/bottom_navigation_items"
+        style="@style/AppTheme.TransNav"/>-->
+
+
+</android.support.design.widget.CoordinatorLayout>

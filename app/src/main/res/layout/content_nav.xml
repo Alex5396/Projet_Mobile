@@ -1,0 +1,82 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_nav">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/contentFragment"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/customerInfo"
+            android:layout_gravity="top"
+            android:background="@drawable/border_radius_20"
+            android:orientation="vertical"
+            android:visibility="visible">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="100sp"
+                        android:layout_height="100sp"
+                        android:id="@+id/customerProfileImage"
+                        android:src="@drawable/ic_user_profil" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:orientation="vertical"
+                    android:layout_marginStart="5dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/customerDestination"
+                        android:paddingTop="10sp"
+                        android:text="Destination: --"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/customerName"
+                        android:text=""
+                        android:paddingTop="10sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/customerPhone"
+                        android:paddingBottom="10sp"
+                        android:text=""
+                        android:paddingTop="10sp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linearContentTwoButton"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.AppCompatButton
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/userInfo_accepter"
+                    android:id="@+id/rideStatus"/>
+                <android.support.v7.widget.AppCompatButton
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/UserInfo_decliner"
+                    android:id="@+id/decliner"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+</FrameLayout>
+

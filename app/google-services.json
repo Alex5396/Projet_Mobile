@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "1016019952559",
+    "firebase_url": "https://mapcar-7d1e7.firebaseio.com",
+    "project_id": "mapcar-7d1e7",
+    "storage_bucket": "mapcar-7d1e7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1016019952559:android:0c1ff1a247c60a10",
+        "android_client_info": {
+          "package_name": "com.community.hanrynzale.gdrivdriver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1016019952559-8362kr52adqkvt3d4anp3m7h06bokf31.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.community.hanrynzale.gdrivdriver",
+            "certificate_hash": "5d5d8f33e7b74a0e3b136b092724fe46dbcece7f"
+          }
+        },
+        {
+          "client_id": "1016019952559-j739h2vlhjfo526l8il0t6rtglmo6dr6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhvKFf5ziyQh-eCBAbpGOvBUngqZwoueE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1016019952559-j739h2vlhjfo526l8il0t6rtglmo6dr6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1016019952559:android:af4d1dec15fc9db0",
+        "android_client_info": {
+          "package_name": "com.community.hanrynzale.mapcar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1016019952559-48pmldvnpjr94n3i5lts9i1ljlaeg9eh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.community.hanrynzale.mapcar",
+            "certificate_hash": "5d5d8f33e7b74a0e3b136b092724fe46dbcece7f"
+          }
+        },
+        {
+          "client_id": "1016019952559-j739h2vlhjfo526l8il0t6rtglmo6dr6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhvKFf5ziyQh-eCBAbpGOvBUngqZwoueE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1016019952559-j739h2vlhjfo526l8il0t6rtglmo6dr6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
